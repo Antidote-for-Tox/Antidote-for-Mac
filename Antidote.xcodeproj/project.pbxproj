@@ -11,6 +11,10 @@
 		11ACFCFF1DEA29FE00E5FE62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ACFCFE1DEA29FE00E5FE62 /* Assets.xcassets */; };
 		11ACFD021DEA29FE00E5FE62 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11ACFD001DEA29FE00E5FE62 /* MainMenu.xib */; };
 		11ACFD0D1DEA29FE00E5FE62 /* AntidoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ACFD0C1DEA29FE00E5FE62 /* AntidoteTests.swift */; };
+		11ACFD211DEA2C2300E5FE62 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */; };
+		11ACFD221DEA2C2300E5FE62 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2188C6F48AA20211ED084596 /* libPods-AntidoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */; };
+		6EF574D6A951585A62040651 /* libPods-Antidote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A1CA5DBD2316D37B671FC0 /* libPods-Antidote.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +25,42 @@
 			remoteGlobalIDString = 11ACFCF81DEA29FE00E5FE62;
 			remoteInfo = Antidote;
 		};
+		11ACFD1D1DEA2C0D00E5FE62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11ACFD181DEA2C0D00E5FE62 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		11ACFD1F1DEA2C0D00E5FE62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11ACFD181DEA2C0D00E5FE62 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+		11ACFD231DEA2C2300E5FE62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11ACFD181DEA2C0D00E5FE62 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11ACFD251DEA2C2300E5FE62 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11ACFD221DEA2C2300E5FE62 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11ACFCF91DEA29FE00E5FE62 /* Antidote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antidote.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +71,14 @@
 		11ACFD081DEA29FE00E5FE62 /* AntidoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntidoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ACFD0C1DEA29FE00E5FE62 /* AntidoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntidoteTests.swift; sourceTree = "<group>"; };
 		11ACFD0E1DEA29FE00E5FE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11ACFD181DEA2C0D00E5FE62 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = submodules/SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
+		11ACFD261DEA2CD800E5FE62 /* Antidote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Antidote-Bridging-Header.h"; sourceTree = "<group>"; };
+		191FE2B78EEBD67AB3A52861 /* Pods-Antidote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antidote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Antidote/Pods-Antidote.debug.xcconfig"; sourceTree = "<group>"; };
+		20A1CA5DBD2316D37B671FC0 /* libPods-Antidote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Antidote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E71A13F5877B1D5A22B7FE /* Pods-AntidoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntidoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntidoteTests/Pods-AntidoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		97F2B7B37B023CCBED066487 /* Pods-AntidoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntidoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntidoteTests/Pods-AntidoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC55605FF3B6978D5B37057C /* Pods-Antidote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antidote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Antidote/Pods-Antidote.release.xcconfig"; sourceTree = "<group>"; };
+		CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AntidoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF574D6A951585A62040651 /* libPods-Antidote.a in Frameworks */,
+				11ACFD211DEA2C2300E5FE62 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2188C6F48AA20211ED084596 /* libPods-AntidoteTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +108,9 @@
 				11ACFCFB1DEA29FE00E5FE62 /* Antidote */,
 				11ACFD0B1DEA29FE00E5FE62 /* AntidoteTests */,
 				11ACFCFA1DEA29FE00E5FE62 /* Products */,
+				F5FCC069498C736E609255AF /* Pods */,
+				3679D6FDD00CE91966C4B88C /* Frameworks */,
+				11ACFD171DEA2BF300E5FE62 /* Submodules */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +130,7 @@
 				11ACFCFE1DEA29FE00E5FE62 /* Assets.xcassets */,
 				11ACFD001DEA29FE00E5FE62 /* MainMenu.xib */,
 				11ACFD031DEA29FE00E5FE62 /* Info.plist */,
+				11ACFD261DEA2CD800E5FE62 /* Antidote-Bridging-Header.h */,
 			);
 			path = Antidote;
 			sourceTree = "<group>";
@@ -90,6 +144,43 @@
 			path = AntidoteTests;
 			sourceTree = "<group>";
 		};
+		11ACFD171DEA2BF300E5FE62 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				11ACFD181DEA2C0D00E5FE62 /* SnapKit.xcodeproj */,
+			);
+			name = Submodules;
+			sourceTree = "<group>";
+		};
+		11ACFD191DEA2C0D00E5FE62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */,
+				11ACFD201DEA2C0D00E5FE62 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3679D6FDD00CE91966C4B88C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20A1CA5DBD2316D37B671FC0 /* libPods-Antidote.a */,
+				CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5FCC069498C736E609255AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				191FE2B78EEBD67AB3A52861 /* Pods-Antidote.debug.xcconfig */,
+				AC55605FF3B6978D5B37057C /* Pods-Antidote.release.xcconfig */,
+				97F2B7B37B023CCBED066487 /* Pods-AntidoteTests.debug.xcconfig */,
+				20E71A13F5877B1D5A22B7FE /* Pods-AntidoteTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,13 +188,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11ACFD111DEA29FE00E5FE62 /* Build configuration list for PBXNativeTarget "Antidote" */;
 			buildPhases = (
+				DF6E424D6D24E5DA6647FDE1 /* [CP] Check Pods Manifest.lock */,
 				11ACFCF51DEA29FE00E5FE62 /* Sources */,
 				11ACFCF61DEA29FE00E5FE62 /* Frameworks */,
 				11ACFCF71DEA29FE00E5FE62 /* Resources */,
+				7456F740375E97BD95CEE3B6 /* [CP] Embed Pods Frameworks */,
+				0BE8E7E14FD8213D47B5BF88 /* [CP] Copy Pods Resources */,
+				11ACFD251DEA2C2300E5FE62 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11ACFD241DEA2C2300E5FE62 /* PBXTargetDependency */,
 			);
 			name = Antidote;
 			productName = Antidote;
@@ -114,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11ACFD141DEA29FE00E5FE62 /* Build configuration list for PBXNativeTarget "AntidoteTests" */;
 			buildPhases = (
+				4EA9379BB6ED43797F898F38 /* [CP] Check Pods Manifest.lock */,
 				11ACFD041DEA29FE00E5FE62 /* Sources */,
 				11ACFD051DEA29FE00E5FE62 /* Frameworks */,
 				11ACFD061DEA29FE00E5FE62 /* Resources */,
+				E2D7E2118C4A5AA11E77E2A0 /* [CP] Embed Pods Frameworks */,
+				095B95D0B13EFBCBCEAA2232 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,6 +240,7 @@
 					11ACFCF81DEA29FE00E5FE62 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = NHVF8NSG3J;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					11ACFD071DEA29FE00E5FE62 = {
@@ -162,6 +262,12 @@
 			mainGroup = 11ACFCF01DEA29FE00E5FE62;
 			productRefGroup = 11ACFCFA1DEA29FE00E5FE62 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 11ACFD191DEA2C0D00E5FE62 /* Products */;
+					ProjectRef = 11ACFD181DEA2C0D00E5FE62 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				11ACFCF81DEA29FE00E5FE62 /* Antidote */,
@@ -169,6 +275,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 11ACFD1D1DEA2C0D00E5FE62 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		11ACFD201DEA2C0D00E5FE62 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = 11ACFD1F1DEA2C0D00E5FE62 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		11ACFCF71DEA29FE00E5FE62 /* Resources */ = {
@@ -188,6 +311,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		095B95D0B13EFBCBCEAA2232 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntidoteTests/Pods-AntidoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BE8E7E14FD8213D47B5BF88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Antidote/Pods-Antidote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EA9379BB6ED43797F898F38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7456F740375E97BD95CEE3B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Antidote/Pods-Antidote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF6E424D6D24E5DA6647FDE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D7E2118C4A5AA11E77E2A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntidoteTests/Pods-AntidoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11ACFCF51DEA29FE00E5FE62 /* Sources */ = {
@@ -213,6 +429,11 @@
 			isa = PBXTargetDependency;
 			target = 11ACFCF81DEA29FE00E5FE62 /* Antidote */;
 			targetProxy = 11ACFD091DEA29FE00E5FE62 /* PBXContainerItemProxy */;
+		};
+		11ACFD241DEA2C2300E5FE62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = 11ACFD231DEA2C2300E5FE62 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -320,36 +541,43 @@
 		};
 		11ACFD121DEA29FE00E5FE62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191FE2B78EEBD67AB3A52861 /* Pods-Antidote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NHVF8NSG3J;
 				INFOPLIST_FILE = Antidote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.dvor.Antidote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Antidote/Antidote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		11ACFD131DEA29FE00E5FE62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC55605FF3B6978D5B37057C /* Pods-Antidote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NHVF8NSG3J;
 				INFOPLIST_FILE = Antidote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.dvor.Antidote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Antidote/Antidote-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		11ACFD151DEA29FE00E5FE62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F2B7B37B023CCBED066487 /* Pods-AntidoteTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NHVF8NSG3J;
@@ -364,8 +592,8 @@
 		};
 		11ACFD161DEA29FE00E5FE62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E71A13F5877B1D5A22B7FE /* Pods-AntidoteTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NHVF8NSG3J;
@@ -397,6 +625,7 @@
 				11ACFD131DEA29FE00E5FE62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11ACFD141DEA29FE00E5FE62 /* Build configuration list for PBXNativeTarget "AntidoteTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +634,7 @@
 				11ACFD161DEA29FE00E5FE62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
