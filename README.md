@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Antidote-for-Tox/Antidote-for-Mac.svg?branch=master)](https://travis-ci.org/Antidote-for-Tox/Antidote-for-Mac)
+
 # Antidote for Mac
 
 [Tox](https://tox.chat/) client for macOS.
