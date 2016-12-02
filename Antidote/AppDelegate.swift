@@ -10,18 +10,20 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var window: NSWindow!
-
+    var mainWindowController: MainWindowController!
+    var settingsWindowController: SettingsWindowController!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        mainWindowController = MainWindowController()
+        mainWindowController.showWindow(nil)
+
+        settingsWindowController = SettingsWindowController()
+        settingsWindowController.showWindow(nil)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
 }
 
