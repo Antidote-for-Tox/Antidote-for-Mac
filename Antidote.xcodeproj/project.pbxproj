@@ -13,6 +13,16 @@
 		11ACFD0D1DEA29FE00E5FE62 /* AntidoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ACFD0C1DEA29FE00E5FE62 /* AntidoteTests.swift */; };
 		11ACFD211DEA2C2300E5FE62 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */; };
 		11ACFD221DEA2C2300E5FE62 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11AD0F491DF171E20054F5D6 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F481DF171E20054F5D6 /* MainWindowController.swift */; };
+		11AD0F4A1DF171E20054F5D6 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F481DF171E20054F5D6 /* MainWindowController.swift */; };
+		11AD0F521DF172560054F5D6 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F511DF172560054F5D6 /* SettingsWindowController.swift */; };
+		11AD0F531DF172560054F5D6 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F511DF172560054F5D6 /* SettingsWindowController.swift */; };
+		11AD0F551DF192D80054F5D6 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F541DF192D80054F5D6 /* ContactListViewController.swift */; };
+		11AD0F561DF192D80054F5D6 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F541DF192D80054F5D6 /* ContactListViewController.swift */; };
+		11AD0F591DF192E80054F5D6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F571DF192E80054F5D6 /* ChatViewController.swift */; };
+		11AD0F5A1DF192E80054F5D6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F571DF192E80054F5D6 /* ChatViewController.swift */; };
+		11AD0F5E1DF193020054F5D6 /* SettingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F5D1DF193020054F5D6 /* SettingsListViewController.swift */; };
+		11AD0F5F1DF193020054F5D6 /* SettingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD0F5D1DF193020054F5D6 /* SettingsListViewController.swift */; };
 		2188C6F48AA20211ED084596 /* libPods-AntidoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */; };
 		6EF574D6A951585A62040651 /* libPods-Antidote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A1CA5DBD2316D37B671FC0 /* libPods-Antidote.a */; };
 /* End PBXBuildFile section */
@@ -73,6 +83,11 @@
 		11ACFD0E1DEA29FE00E5FE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11ACFD181DEA2C0D00E5FE62 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = submodules/SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
 		11ACFD261DEA2CD800E5FE62 /* Antidote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Antidote-Bridging-Header.h"; sourceTree = "<group>"; };
+		11AD0F481DF171E20054F5D6 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		11AD0F511DF172560054F5D6 /* SettingsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		11AD0F541DF192D80054F5D6 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		11AD0F571DF192E80054F5D6 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		11AD0F5D1DF193020054F5D6 /* SettingsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsListViewController.swift; sourceTree = "<group>"; };
 		191FE2B78EEBD67AB3A52861 /* Pods-Antidote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antidote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Antidote/Pods-Antidote.debug.xcconfig"; sourceTree = "<group>"; };
 		20A1CA5DBD2316D37B671FC0 /* libPods-Antidote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Antidote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E71A13F5877B1D5A22B7FE /* Pods-AntidoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntidoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntidoteTests/Pods-AntidoteTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +146,7 @@
 				11ACFD001DEA29FE00E5FE62 /* MainMenu.xib */,
 				11ACFD031DEA29FE00E5FE62 /* Info.plist */,
 				11ACFD261DEA2CD800E5FE62 /* Antidote-Bridging-Header.h */,
+				11AD0F461DF171AE0054F5D6 /* Controllers */,
 			);
 			path = Antidote;
 			sourceTree = "<group>";
@@ -159,6 +175,19 @@
 				11ACFD201DEA2C0D00E5FE62 /* SnapKit Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		11AD0F461DF171AE0054F5D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11AD0F481DF171E20054F5D6 /* MainWindowController.swift */,
+				11AD0F511DF172560054F5D6 /* SettingsWindowController.swift */,
+				11AD0F541DF192D80054F5D6 /* ContactListViewController.swift */,
+				11AD0F571DF192E80054F5D6 /* ChatViewController.swift */,
+				11AD0F5D1DF193020054F5D6 /* SettingsListViewController.swift */,
+			);
+			name = Controllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3679D6FDD00CE91966C4B88C /* Frameworks */ = {
@@ -410,6 +439,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AD0F491DF171E20054F5D6 /* MainWindowController.swift in Sources */,
+				11AD0F551DF192D80054F5D6 /* ContactListViewController.swift in Sources */,
+				11AD0F521DF172560054F5D6 /* SettingsWindowController.swift in Sources */,
+				11AD0F591DF192E80054F5D6 /* ChatViewController.swift in Sources */,
+				11AD0F5E1DF193020054F5D6 /* SettingsListViewController.swift in Sources */,
 				11ACFCFD1DEA29FE00E5FE62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +452,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AD0F4A1DF171E20054F5D6 /* MainWindowController.swift in Sources */,
+				11AD0F561DF192D80054F5D6 /* ContactListViewController.swift in Sources */,
+				11AD0F531DF172560054F5D6 /* SettingsWindowController.swift in Sources */,
+				11AD0F5A1DF192E80054F5D6 /* ChatViewController.swift in Sources */,
+				11AD0F5F1DF193020054F5D6 /* SettingsListViewController.swift in Sources */,
 				11ACFD0D1DEA29FE00E5FE62 /* AntidoteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,7 +588,7 @@
 				DEVELOPMENT_TEAM = NHVF8NSG3J;
 				INFOPLIST_FILE = Antidote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.dvor.Antidote;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dvor.Antidote-for-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Antidote/Antidote-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -567,7 +606,7 @@
 				DEVELOPMENT_TEAM = NHVF8NSG3J;
 				INFOPLIST_FILE = Antidote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.dvor.Antidote;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dvor.Antidote-for-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Antidote/Antidote-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
