@@ -10,6 +10,7 @@ import Cocoa
 import SnapKit
 
 class ContactsTableViewController: BaseTableViewController {
+
     func numberOfRows(in tableView: NSTableView) -> Int {
         return FriendManager.friends.count
     }

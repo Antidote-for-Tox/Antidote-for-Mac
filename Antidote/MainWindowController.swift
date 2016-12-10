@@ -47,7 +47,9 @@ fileprivate extension MainWindowController {
         messagesTableViewItem.minimumThickness = 600
         splitViewController.addSplitViewItem(messagesTableViewItem)
     }
-    
+}
+
+extension MainWindowController {
     func cellClicked(sender: Any!) {
         print(sender)
     }
