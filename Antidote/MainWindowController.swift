@@ -26,6 +26,7 @@ class MainWindowController: NSWindowController {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        
     }
 }
 
@@ -34,13 +35,20 @@ fileprivate extension MainWindowController {
         let splitViewController = NSSplitViewController()
         contentViewController = splitViewController
         
-        let contactListViewItem = NSSplitViewItem(contentListWithViewController: ContactListViewController())
-        contactListViewItem.minimumThickness = 200
-        contactListViewItem.maximumThickness = 400
-        splitViewController.addSplitViewItem(contactListViewItem)
+        let contactsTableViewController = ContactsTableViewController()
+        contactsTableViewController.splitViewController = splitViewController
+        let contactsTableViewItem = NSSplitViewItem(contentListWithViewController: contactsTableViewController)
+        contactsTableViewItem.minimumThickness = 300
+        splitViewController.addSplitViewItem(contactsTableViewItem)
         
-        let messageListViewItem = NSSplitViewItem(viewController: MessageListViewController())
-        messageListViewItem.minimumThickness = 600
-        splitViewController.addSplitViewItem(messageListViewItem)
+        let messagesTableViewController = MessagesTableViewController()
+        messagesTableViewController.splitViewController = splitViewController
+        let messagesTableViewItem = NSSplitViewItem(viewController: messagesTableViewController)
+        messagesTableViewItem.minimumThickness = 600
+        splitViewController.addSplitViewItem(messagesTableViewItem)
+    }
+    
+    func cellClicked(sender: Any!) {
+        print(sender)
     }
 }

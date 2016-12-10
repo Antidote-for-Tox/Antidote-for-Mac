@@ -15,12 +15,15 @@
 		11ACFD221DEA2C2300E5FE62 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2188C6F48AA20211ED084596 /* libPods-AntidoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */; };
 		6EF574D6A951585A62040651 /* libPods-Antidote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A1CA5DBD2316D37B671FC0 /* libPods-Antidote.a */; };
-		DD3074A51DF3366500D04B08 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074A41DF3366500D04B08 /* MessageListViewController.swift */; };
+		DD3074A51DF3366500D04B08 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074A41DF3366500D04B08 /* MessagesTableViewController.swift */; };
 		DD3074A91DF3434E00D04B08 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074A81DF3434E00D04B08 /* Friends.swift */; };
-		DD3074AD1DF345D400D04B08 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074AC1DF345D400D04B08 /* ContactListView.swift */; };
-		DD3074AF1DF34AAC00D04B08 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074AE1DF34AAC00D04B08 /* MessageListView.swift */; };
+		DD3074B71DF41E8A00D04B08 /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074B61DF41E8A00D04B08 /* ContactCellView.swift */; };
+		DD3074B91DF461A500D04B08 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074B81DF461A500D04B08 /* LabelView.swift */; };
+		DD3074BB1DF49A2D00D04B08 /* MessageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074BA1DF49A2D00D04B08 /* MessageCellView.swift */; };
+		DD3074BD1DF49B0B00D04B08 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074BC1DF49B0B00D04B08 /* BaseTableViewController.swift */; };
+		DD3074BF1DF49C0700D04B08 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074BE1DF49C0700D04B08 /* Message.swift */; };
 		DD662A5B1DF29AA1002AF4D8 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD662A5A1DF29AA1002AF4D8 /* MainWindowController.swift */; };
-		DD662A5F1DF29DA0002AF4D8 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD662A5E1DF29DA0002AF4D8 /* ContactListViewController.swift */; };
+		DD662A5F1DF29DA0002AF4D8 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD662A5E1DF29DA0002AF4D8 /* ContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,12 +88,15 @@
 		97F2B7B37B023CCBED066487 /* Pods-AntidoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntidoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntidoteTests/Pods-AntidoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC55605FF3B6978D5B37057C /* Pods-Antidote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antidote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Antidote/Pods-Antidote.release.xcconfig"; sourceTree = "<group>"; };
 		CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AntidoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD3074A41DF3366500D04B08 /* MessageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		DD3074A41DF3366500D04B08 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		DD3074A81DF3434E00D04B08 /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
-		DD3074AC1DF345D400D04B08 /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
-		DD3074AE1DF34AAC00D04B08 /* MessageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
+		DD3074B61DF41E8A00D04B08 /* ContactCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellView.swift; sourceTree = "<group>"; };
+		DD3074B81DF461A500D04B08 /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		DD3074BA1DF49A2D00D04B08 /* MessageCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCellView.swift; sourceTree = "<group>"; };
+		DD3074BC1DF49B0B00D04B08 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		DD3074BE1DF49C0700D04B08 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DD662A5A1DF29AA1002AF4D8 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
-		DD662A5E1DF29DA0002AF4D8 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		DD662A5E1DF29DA0002AF4D8 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				DD662A5A1DF29AA1002AF4D8 /* MainWindowController.swift */,
-				DD662A5E1DF29DA0002AF4D8 /* ContactListViewController.swift */,
-				DD3074A41DF3366500D04B08 /* MessageListViewController.swift */,
+				DD3074BC1DF49B0B00D04B08 /* BaseTableViewController.swift */,
+				DD662A5E1DF29DA0002AF4D8 /* ContactsTableViewController.swift */,
+				DD3074A41DF3366500D04B08 /* MessagesTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				DD3074A81DF3434E00D04B08 /* Friends.swift */,
+				DD3074BE1DF49C0700D04B08 /* Message.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -204,8 +212,9 @@
 		DD3074AB1DF3450700D04B08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DD3074AC1DF345D400D04B08 /* ContactListView.swift */,
-				DD3074AE1DF34AAC00D04B08 /* MessageListView.swift */,
+				DD3074B61DF41E8A00D04B08 /* ContactCellView.swift */,
+				DD3074BA1DF49A2D00D04B08 /* MessageCellView.swift */,
+				DD3074B81DF461A500D04B08 /* LabelView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -460,13 +469,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD3074BD1DF49B0B00D04B08 /* BaseTableViewController.swift in Sources */,
 				DD662A5B1DF29AA1002AF4D8 /* MainWindowController.swift in Sources */,
-				DD3074AF1DF34AAC00D04B08 /* MessageListView.swift in Sources */,
+				DD3074B91DF461A500D04B08 /* LabelView.swift in Sources */,
 				11ACFCFD1DEA29FE00E5FE62 /* AppDelegate.swift in Sources */,
-				DD3074A51DF3366500D04B08 /* MessageListViewController.swift in Sources */,
-				DD3074AD1DF345D400D04B08 /* ContactListView.swift in Sources */,
+				DD3074A51DF3366500D04B08 /* MessagesTableViewController.swift in Sources */,
 				DD3074A91DF3434E00D04B08 /* Friends.swift in Sources */,
-				DD662A5F1DF29DA0002AF4D8 /* ContactListViewController.swift in Sources */,
+				DD662A5F1DF29DA0002AF4D8 /* ContactsTableViewController.swift in Sources */,
+				DD3074BF1DF49C0700D04B08 /* Message.swift in Sources */,
+				DD3074B71DF41E8A00D04B08 /* ContactCellView.swift in Sources */,
+				DD3074BB1DF49A2D00D04B08 /* MessageCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
