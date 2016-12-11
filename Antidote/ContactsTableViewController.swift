@@ -9,6 +9,11 @@
 import Cocoa
 import SnapKit
 
+/*
+ * ContactsTableViewController is a controller which handles tableView containing user's contacts.
+ * It's responsible for handling tableView's events and for communication with parent splitViewController.
+ */
+
 class ContactsTableViewController: BaseTableViewController {
 
     func numberOfRows(in tableView: NSTableView) -> Int {
@@ -21,8 +26,8 @@ class ContactsTableViewController: BaseTableViewController {
         let friend = FriendManager.friends[row]
         
         cell.userAvatar.image = friend.avatar
-        cell.usernameTextField.stringValue = friend.name
-        cell.lastMessageTextField.stringValue = friend.hash
+        cell.usernameLabel.stringValue = friend.name
+        cell.lastMessageLabel.stringValue = friend.hash
         
         return cell
     }
@@ -31,9 +36,8 @@ class ContactsTableViewController: BaseTableViewController {
         return 72
     }
     
-    func tableViewSelectionDidChange(_ notification: Notification) {
-        let table = notification.object as! NSTableView
-        table.deselectRow(table.selectedRow)
+    func tableViewSelectionDidChange(_ tableView: NSTableView) {
+        tableView.deselectRow(tableView.selectedRow)
     }
     
 }

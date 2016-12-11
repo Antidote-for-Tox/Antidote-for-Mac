@@ -12,8 +12,6 @@ class BaseTableViewController: NSViewController, NSTableViewDelegate, NSTableVie
     var scrollView: NSScrollView!
     var tableView: NSTableView!
     
-    var splitViewController: NSSplitViewController!
-    
     override func loadView() {
         tableView = NSTableView()
         tableView.addTableColumn(NSTableColumn())

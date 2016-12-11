@@ -8,6 +8,9 @@
 
 import Cocoa
 
+// This model is for development purposes only
+// Will be changed to OCT* after actual connection is implemented
+
 class Message: NSObject {
     enum MessageContent {
         case text(String)

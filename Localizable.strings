@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Antidote
+
+  Created by Yoba on 12/12/2016.
+  Copyright © 2016 Dmytro Vorobiov. All rights reserved.
+*/
+
+"contact_cell_call_button" = "Call";
+"contact_cell_option_button" = "Options";

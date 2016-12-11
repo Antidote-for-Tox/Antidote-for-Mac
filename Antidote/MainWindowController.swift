@@ -36,21 +36,13 @@ fileprivate extension MainWindowController {
         contentViewController = splitViewController
         
         let contactsTableViewController = ContactsTableViewController()
-        contactsTableViewController.splitViewController = splitViewController
         let contactsTableViewItem = NSSplitViewItem(contentListWithViewController: contactsTableViewController)
         contactsTableViewItem.minimumThickness = 300
         splitViewController.addSplitViewItem(contactsTableViewItem)
         
-        let messagesTableViewController = MessagesTableViewController()
-        messagesTableViewController.splitViewController = splitViewController
-        let messagesTableViewItem = NSSplitViewItem(viewController: messagesTableViewController)
-        messagesTableViewItem.minimumThickness = 600
-        splitViewController.addSplitViewItem(messagesTableViewItem)
-    }
-}
-
-extension MainWindowController {
-    func cellClicked(sender: Any!) {
-        print(sender)
+        let initialViewController = InitialViewController()
+        let initialTableViewItem = NSSplitViewItem(viewController: initialViewController)
+        initialTableViewItem.minimumThickness = 600
+        splitViewController.addSplitViewItem(initialTableViewItem)
     }
 }

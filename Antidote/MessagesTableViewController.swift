@@ -8,6 +8,11 @@
 
 import Cocoa
 
+/*
+ * MessagesTableViewController is responsible for getting friend object from parent controller 
+ * (or elsewhere ???) and correctly displaying current user message history.
+ */
+
 class MessagesTableViewController: BaseTableViewController {
     var friend: Friend!
     

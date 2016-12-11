@@ -8,6 +8,9 @@
 
 import Cocoa
 
+// These models are for development purposes only
+// Will be changed to OCT* after actual connection is implemented
+
 class FriendManager: NSObject {
     static var friends: [Friend] {
         return [
