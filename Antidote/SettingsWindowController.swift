@@ -8,6 +8,10 @@
 
 import Cocoa
 
+/*
+ * SettingsWindowController is a window with settings. Nuff said.
+ */
+
 class SettingsWindowController: NSWindowController {
 
     override func windowDidLoad() {
