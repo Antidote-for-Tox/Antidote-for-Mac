@@ -8,6 +8,13 @@
 
 import Cocoa
 
+/*
+ * MainWindowController is an entry point in application. At least until "tutorialWindowController" is created.
+ * It contains NSSplitViewController. At left part there is always contact list.
+ * At the right part will be shown one of the controllers: InitialViewController at launch, when no contacts
+ * selected; MessagesViewController when contacts is selected; CallViewController when user wishes to call someone. 
+ */
+
 class MainWindowController: NSWindowController {
     override init(window _: NSWindow?) {
         let mainWindow = NSWindow(

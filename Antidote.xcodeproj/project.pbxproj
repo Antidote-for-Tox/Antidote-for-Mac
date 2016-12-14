@@ -22,6 +22,7 @@
 		DD3074BD1DF49B0B00D04B08 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3074BC1DF49B0B00D04B08 /* BaseTableViewController.swift */; };
 		DD662A5B1DF29AA1002AF4D8 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD662A5A1DF29AA1002AF4D8 /* MainWindowController.swift */; };
 		DD662A5F1DF29DA0002AF4D8 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD662A5E1DF29DA0002AF4D8 /* ContactsTableViewController.swift */; };
+		DD9253161E014699006079BB /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9253151E014699006079BB /* SettingsWindowController.swift */; };
 		DDCE96F71DFDEE81000834FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDCE96F61DFDEE81000834FB /* Localizable.strings */; };
 		DDCE96FA1DFDEF3D000834FB /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE96F91DFDEF3D000834FB /* StringExtensions.swift */; };
 		DDCE96FD1DFDF4A5000834FB /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE96FB1DFDF4A5000834FB /* Friends.swift */; };
@@ -99,6 +100,7 @@
 		DD3074BC1DF49B0B00D04B08 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		DD662A5A1DF29AA1002AF4D8 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		DD662A5E1DF29DA0002AF4D8 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		DD9253151E014699006079BB /* SettingsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
 		DDCE96F61DFDEE81000834FB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Localizable.strings; sourceTree = "<group>"; };
 		DDCE96F91DFDEF3D000834FB /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		DDCE96FB1DFDF4A5000834FB /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				DDCE97001DFDFB62000834FB /* InitialViewController.swift */,
 				DD662A5A1DF29AA1002AF4D8 /* MainWindowController.swift */,
 				DD3074A41DF3366500D04B08 /* MessagesTableViewController.swift */,
+				DD9253151E014699006079BB /* SettingsWindowController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				11ACFCFD1DEA29FE00E5FE62 /* AppDelegate.swift in Sources */,
 				DD3074A51DF3366500D04B08 /* MessagesTableViewController.swift in Sources */,
 				DDCE96FE1DFDF4A5000834FB /* Message.swift in Sources */,
+				DD9253161E014699006079BB /* SettingsWindowController.swift in Sources */,
 				DDCE96FA1DFDEF3D000834FB /* StringExtensions.swift in Sources */,
 				DD662A5F1DF29DA0002AF4D8 /* ContactsTableViewController.swift in Sources */,
 				DDCE97031DFDFE47000834FB /* CallViewController.swift in Sources */,
