@@ -25,9 +25,16 @@ class ContactsTableViewController: BaseTableViewController {
         
         let friend = FriendManager.friends[row]
         
-        cell.userAvatar.image = friend.avatar
-        cell.usernameLabel.stringValue = friend.name
-        cell.lastMessageLabel.stringValue = friend.hash
+        // TODO: handle unwrap correctly
+        
+        if let avatarData = friend.avatarData {
+            cell.userAvatar.image = NSImage(data: avatarData)
+        } else {
+            cell.userAvatar.image = #imageLiteral(resourceName: "avatarPlaceholder")
+        }
+        
+        cell.usernameLabel.stringValue = friend.name ?? "No name" // How is this possible?
+        cell.lastMessageLabel.stringValue = friend.statusMessage ?? ""
         
         return cell
     }

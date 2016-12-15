@@ -14,8 +14,6 @@ import Cocoa
  */
 
 class MessagesTableViewController: BaseTableViewController {
-    var friend: Friend!
-    
     func numberOfRows(in tableView: NSTableView) -> Int {
         return FriendManager.friends.count
     }
@@ -23,20 +21,11 @@ class MessagesTableViewController: BaseTableViewController {
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let cell = MessageCellView()
         
-        let message = self.friend?.messageHistory[row]
+        let message = OCTMessageAbstract()
         
-        if let content = message?.content {
-            
-            // TODO: handle all message types
-            switch content {
-            case .text(let msg):
-                cell.textField?.stringValue = msg
-            case .image:
-                cell.textField?.stringValue = "image"
-            case .audio:
-                cell.textField?.stringValue = "audio"
-            }
-        }
+        // TODO: handle uwrap correctly
+        // TODO: handle all message types
+        cell.textField?.stringValue = (message.messageText?.text)!
         
         return cell
     }

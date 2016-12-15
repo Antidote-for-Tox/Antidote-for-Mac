@@ -26,7 +26,6 @@
 		DDCE96F71DFDEE81000834FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDCE96F61DFDEE81000834FB /* Localizable.strings */; };
 		DDCE96FA1DFDEF3D000834FB /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE96F91DFDEF3D000834FB /* StringExtensions.swift */; };
 		DDCE96FD1DFDF4A5000834FB /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE96FB1DFDF4A5000834FB /* Friends.swift */; };
-		DDCE96FE1DFDF4A5000834FB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE96FC1DFDF4A5000834FB /* Message.swift */; };
 		DDCE97011DFDFB63000834FB /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE97001DFDFB62000834FB /* InitialViewController.swift */; };
 		DDCE97031DFDFE47000834FB /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE97021DFDFE47000834FB /* CallViewController.swift */; };
 /* End PBXBuildFile section */
@@ -104,7 +103,6 @@
 		DDCE96F61DFDEE81000834FB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Localizable.strings; sourceTree = "<group>"; };
 		DDCE96F91DFDEF3D000834FB /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		DDCE96FB1DFDF4A5000834FB /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
-		DDCE96FC1DFDF4A5000834FB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DDCE97001DFDFB62000834FB /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		DDCE97021DFDFE47000834FB /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -255,7 +253,6 @@
 			isa = PBXGroup;
 			children = (
 				DDCE96FB1DFDF4A5000834FB /* Friends.swift */,
-				DDCE96FC1DFDF4A5000834FB /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -508,7 +505,6 @@
 				DDCE96FD1DFDF4A5000834FB /* Friends.swift in Sources */,
 				11ACFCFD1DEA29FE00E5FE62 /* AppDelegate.swift in Sources */,
 				DD3074A51DF3366500D04B08 /* MessagesTableViewController.swift in Sources */,
-				DDCE96FE1DFDF4A5000834FB /* Message.swift in Sources */,
 				DD9253161E014699006079BB /* SettingsWindowController.swift in Sources */,
 				DDCE96FA1DFDEF3D000834FB /* StringExtensions.swift in Sources */,
 				DD662A5F1DF29DA0002AF4D8 /* ContactsTableViewController.swift in Sources */,
