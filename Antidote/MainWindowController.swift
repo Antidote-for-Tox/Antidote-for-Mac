@@ -32,7 +32,7 @@ class MainWindowController: NSWindowController {
     
     override init(window: NSWindow?) {
         let mainWindow = NSWindow(
-            contentRect: NSRect(x: 100, y: 100, width: 640, height: 480),
+            contentRect: NSZeroRect,
             styleMask: [.closable, .resizable, .miniaturizable, .titled],
             backing: .buffered,
             defer: false
@@ -70,5 +70,10 @@ fileprivate extension MainWindowController {
         contactListViewItem.minimumThickness = Constants.minimumColumnThickness
         contactListViewItem.maximumThickness = Constants.maximumColumnThickness
         splitViewController.addSplitViewItem(contactListViewItem)
+        
+        let chatViewController = ChatViewController()
+        let chatViewItem = NSSplitViewItem(viewController: chatViewController)
+        chatViewItem.minimumThickness = 350
+        splitViewController.addSplitViewItem(chatViewItem)
     }
 }

@@ -14,7 +14,6 @@
 		11ACFD221DEA2C2300E5FE62 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2188C6F48AA20211ED084596 /* libPods-AntidoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */; };
 		6EF574D6A951585A62040651 /* libPods-Antidote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A1CA5DBD2316D37B671FC0 /* libPods-Antidote.a */; };
-		DD43D5781E05BA3F0036AC28 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43D5771E05BA3F0036AC28 /* MainWindowController.swift */; };
 		DDA9A10F1E05DD17003E9888 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9A10E1E05DD17003E9888 /* StringExtension.swift */; };
 		DDDAB02E1E2872F600775B87 /* BaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0291E2872F600775B87 /* BaseConstants.swift */; };
 		DDDAB02F1E2872F600775B87 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB02A1E2872F600775B87 /* LabelView.swift */; };
@@ -24,6 +23,12 @@
 		DDDAB0371E28746500775B87 /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0351E28746500775B87 /* ContactCellView.swift */; };
 		DDDAB03B1E28749400775B87 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03A1E28749400775B87 /* ContactListViewController.swift */; };
 		DDDAB03D1E28789500775B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03C1E28789500775B87 /* AppDelegate.swift */; };
+		DDDAB0401E287A0100775B87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03E1E287A0100775B87 /* ChatViewController.swift */; };
+		DDDAB0411E287A0100775B87 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03F1E287A0100775B87 /* MainWindowController.swift */; };
+		DDDAB0461E287A2000775B87 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0421E287A2000775B87 /* ChatView.swift */; };
+		DDDAB0471E287A2000775B87 /* HeaderBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0431E287A2000775B87 /* HeaderBarView.swift */; };
+		DDDAB0481E287A2000775B87 /* MessageBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0441E287A2000775B87 /* MessageBarView.swift */; };
+		DDDAB0491E287A2000775B87 /* MessageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0451E287A2000775B87 /* MessageCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +92,6 @@
 		97F2B7B37B023CCBED066487 /* Pods-AntidoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntidoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntidoteTests/Pods-AntidoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC55605FF3B6978D5B37057C /* Pods-Antidote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antidote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Antidote/Pods-Antidote.release.xcconfig"; sourceTree = "<group>"; };
 		CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AntidoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD43D5771E05BA3F0036AC28 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		DDA9A10E1E05DD17003E9888 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		DDDAB0291E2872F600775B87 /* BaseConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConstants.swift; sourceTree = "<group>"; };
 		DDDAB02A1E2872F600775B87 /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,12 @@
 		DDDAB0351E28746500775B87 /* ContactCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellView.swift; sourceTree = "<group>"; };
 		DDDAB03A1E28749400775B87 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		DDDAB03C1E28789500775B87 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDDAB03E1E287A0100775B87 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		DDDAB03F1E287A0100775B87 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		DDDAB0421E287A2000775B87 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		DDDAB0431E287A2000775B87 /* HeaderBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderBarView.swift; sourceTree = "<group>"; };
+		DDDAB0441E287A2000775B87 /* MessageBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBarView.swift; sourceTree = "<group>"; };
+		DDDAB0451E287A2000775B87 /* MessageCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +209,9 @@
 		DD43D5731E05B9B60036AC28 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DDDAB03E1E287A0100775B87 /* ChatViewController.swift */,
 				DDDAB03A1E28749400775B87 /* ContactListViewController.swift */,
-				DD43D5771E05BA3F0036AC28 /* MainWindowController.swift */,
+				DDDAB03F1E287A0100775B87 /* MainWindowController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -209,7 +220,11 @@
 			isa = PBXGroup;
 			children = (
 				DDDAB01D1E2870E400775B87 /* Base Views */,
+				DDDAB0421E287A2000775B87 /* ChatView.swift */,
 				DDDAB0351E28746500775B87 /* ContactCellView.swift */,
+				DDDAB0431E287A2000775B87 /* HeaderBarView.swift */,
+				DDDAB0441E287A2000775B87 /* MessageBarView.swift */,
+				DDDAB0451E287A2000775B87 /* MessageCellView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -487,13 +502,18 @@
 			files = (
 				DDDAB0321E2872F600775B87 /* RoundedImageView.swift in Sources */,
 				DDDAB03B1E28749400775B87 /* ContactListViewController.swift in Sources */,
-				DD43D5781E05BA3F0036AC28 /* MainWindowController.swift in Sources */,
 				DDDAB0371E28746500775B87 /* ContactCellView.swift in Sources */,
 				DDDAB0301E2872F600775B87 /* ListView.swift in Sources */,
+				DDDAB0461E287A2000775B87 /* ChatView.swift in Sources */,
 				DDDAB0311E2872F600775B87 /* MultilineTextField.swift in Sources */,
 				DDDAB02E1E2872F600775B87 /* BaseConstants.swift in Sources */,
 				DDA9A10F1E05DD17003E9888 /* StringExtension.swift in Sources */,
+				DDDAB0491E287A2000775B87 /* MessageCellView.swift in Sources */,
+				DDDAB0481E287A2000775B87 /* MessageBarView.swift in Sources */,
 				DDDAB03D1E28789500775B87 /* AppDelegate.swift in Sources */,
+				DDDAB0471E287A2000775B87 /* HeaderBarView.swift in Sources */,
+				DDDAB0411E287A0100775B87 /* MainWindowController.swift in Sources */,
+				DDDAB0401E287A0100775B87 /* ChatViewController.swift in Sources */,
 				DDDAB02F1E2872F600775B87 /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
