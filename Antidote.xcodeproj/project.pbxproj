@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11ACFCFD1DEA29FE00E5FE62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ACFCFC1DEA29FE00E5FE62 /* AppDelegate.swift */; };
 		11ACFCFF1DEA29FE00E5FE62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ACFCFE1DEA29FE00E5FE62 /* Assets.xcassets */; };
 		11ACFD021DEA29FE00E5FE62 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11ACFD001DEA29FE00E5FE62 /* MainMenu.xib */; };
 		11ACFD0D1DEA29FE00E5FE62 /* AntidoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ACFD0C1DEA29FE00E5FE62 /* AntidoteTests.swift */; };
@@ -22,6 +21,9 @@
 		DDDAB0301E2872F600775B87 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB02B1E2872F600775B87 /* ListView.swift */; };
 		DDDAB0311E2872F600775B87 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB02C1E2872F600775B87 /* MultilineTextField.swift */; };
 		DDDAB0321E2872F600775B87 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB02D1E2872F600775B87 /* RoundedImageView.swift */; };
+		DDDAB0371E28746500775B87 /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0351E28746500775B87 /* ContactCellView.swift */; };
+		DDDAB03B1E28749400775B87 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03A1E28749400775B87 /* ContactListViewController.swift */; };
+		DDDAB03D1E28789500775B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03C1E28789500775B87 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +73,6 @@
 
 /* Begin PBXFileReference section */
 		11ACFCF91DEA29FE00E5FE62 /* Antidote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antidote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		11ACFCFC1DEA29FE00E5FE62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11ACFCFE1DEA29FE00E5FE62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11ACFD011DEA29FE00E5FE62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		11ACFD031DEA29FE00E5FE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +94,9 @@
 		DDDAB02B1E2872F600775B87 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DDDAB02C1E2872F600775B87 /* MultilineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		DDDAB02D1E2872F600775B87 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		DDDAB0351E28746500775B87 /* ContactCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellView.swift; sourceTree = "<group>"; };
+		DDDAB03A1E28749400775B87 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		DDDAB03C1E28789500775B87 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +144,7 @@
 		11ACFCFB1DEA29FE00E5FE62 /* Antidote */ = {
 			isa = PBXGroup;
 			children = (
-				11ACFCFC1DEA29FE00E5FE62 /* AppDelegate.swift */,
+				DDDAB03C1E28789500775B87 /* AppDelegate.swift */,
 				DD43D5731E05B9B60036AC28 /* Controllers */,
 				DD43D5751E05B9C50036AC28 /* Extensions */,
 				DD43D5721E05B9A10036AC28 /* Models */,
@@ -195,6 +199,7 @@
 		DD43D5731E05B9B60036AC28 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DDDAB03A1E28749400775B87 /* ContactListViewController.swift */,
 				DD43D5771E05BA3F0036AC28 /* MainWindowController.swift */,
 			);
 			name = Controllers;
@@ -204,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				DDDAB01D1E2870E400775B87 /* Base Views */,
+				DDDAB0351E28746500775B87 /* ContactCellView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -480,12 +486,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDAB0321E2872F600775B87 /* RoundedImageView.swift in Sources */,
+				DDDAB03B1E28749400775B87 /* ContactListViewController.swift in Sources */,
 				DD43D5781E05BA3F0036AC28 /* MainWindowController.swift in Sources */,
-				11ACFCFD1DEA29FE00E5FE62 /* AppDelegate.swift in Sources */,
+				DDDAB0371E28746500775B87 /* ContactCellView.swift in Sources */,
 				DDDAB0301E2872F600775B87 /* ListView.swift in Sources */,
 				DDDAB0311E2872F600775B87 /* MultilineTextField.swift in Sources */,
 				DDDAB02E1E2872F600775B87 /* BaseConstants.swift in Sources */,
 				DDA9A10F1E05DD17003E9888 /* StringExtension.swift in Sources */,
+				DDDAB03D1E28789500775B87 /* AppDelegate.swift in Sources */,
 				DDDAB02F1E2872F600775B87 /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

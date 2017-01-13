@@ -10,15 +10,14 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    let mainWindowController = MainWindowController()
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        MainWindowController().showWindow(nil)
+        mainWindowController.showWindow(nil)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
 }
 
