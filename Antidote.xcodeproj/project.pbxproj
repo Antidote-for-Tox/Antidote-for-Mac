@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11ACFCFD1DEA29FE00E5FE62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ACFCFC1DEA29FE00E5FE62 /* AppDelegate.swift */; };
 		11ACFCFF1DEA29FE00E5FE62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ACFCFE1DEA29FE00E5FE62 /* Assets.xcassets */; };
 		11ACFD021DEA29FE00E5FE62 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11ACFD001DEA29FE00E5FE62 /* MainMenu.xib */; };
 		11ACFD0D1DEA29FE00E5FE62 /* AntidoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ACFD0C1DEA29FE00E5FE62 /* AntidoteTests.swift */; };
@@ -15,6 +14,21 @@
 		11ACFD221DEA2C2300E5FE62 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2188C6F48AA20211ED084596 /* libPods-AntidoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */; };
 		6EF574D6A951585A62040651 /* libPods-Antidote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A1CA5DBD2316D37B671FC0 /* libPods-Antidote.a */; };
+		DDA9A10F1E05DD17003E9888 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9A10E1E05DD17003E9888 /* StringExtension.swift */; };
+		DDDAB02E1E2872F600775B87 /* BaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0291E2872F600775B87 /* BaseConstants.swift */; };
+		DDDAB02F1E2872F600775B87 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB02A1E2872F600775B87 /* LabelView.swift */; };
+		DDDAB0301E2872F600775B87 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB02B1E2872F600775B87 /* ListView.swift */; };
+		DDDAB0311E2872F600775B87 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB02C1E2872F600775B87 /* MultilineTextField.swift */; };
+		DDDAB0321E2872F600775B87 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB02D1E2872F600775B87 /* RoundedImageView.swift */; };
+		DDDAB0371E28746500775B87 /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0351E28746500775B87 /* ContactCellView.swift */; };
+		DDDAB03B1E28749400775B87 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03A1E28749400775B87 /* ContactListViewController.swift */; };
+		DDDAB03D1E28789500775B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03C1E28789500775B87 /* AppDelegate.swift */; };
+		DDDAB0401E287A0100775B87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03E1E287A0100775B87 /* ChatViewController.swift */; };
+		DDDAB0411E287A0100775B87 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB03F1E287A0100775B87 /* MainWindowController.swift */; };
+		DDDAB0461E287A2000775B87 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0421E287A2000775B87 /* ChatView.swift */; };
+		DDDAB0471E287A2000775B87 /* HeaderBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0431E287A2000775B87 /* HeaderBarView.swift */; };
+		DDDAB0481E287A2000775B87 /* MessageBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0441E287A2000775B87 /* MessageBarView.swift */; };
+		DDDAB0491E287A2000775B87 /* MessageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0451E287A2000775B87 /* MessageCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +78,6 @@
 
 /* Begin PBXFileReference section */
 		11ACFCF91DEA29FE00E5FE62 /* Antidote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antidote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		11ACFCFC1DEA29FE00E5FE62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11ACFCFE1DEA29FE00E5FE62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11ACFD011DEA29FE00E5FE62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		11ACFD031DEA29FE00E5FE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +92,21 @@
 		97F2B7B37B023CCBED066487 /* Pods-AntidoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntidoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntidoteTests/Pods-AntidoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC55605FF3B6978D5B37057C /* Pods-Antidote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antidote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Antidote/Pods-Antidote.release.xcconfig"; sourceTree = "<group>"; };
 		CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AntidoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA9A10E1E05DD17003E9888 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		DDDAB0291E2872F600775B87 /* BaseConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConstants.swift; sourceTree = "<group>"; };
+		DDDAB02A1E2872F600775B87 /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		DDDAB02B1E2872F600775B87 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DDDAB02C1E2872F600775B87 /* MultilineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
+		DDDAB02D1E2872F600775B87 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		DDDAB0351E28746500775B87 /* ContactCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellView.swift; sourceTree = "<group>"; };
+		DDDAB03A1E28749400775B87 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		DDDAB03C1E28789500775B87 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDDAB03E1E287A0100775B87 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		DDDAB03F1E287A0100775B87 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		DDDAB0421E287A2000775B87 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		DDDAB0431E287A2000775B87 /* HeaderBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderBarView.swift; sourceTree = "<group>"; };
+		DDDAB0441E287A2000775B87 /* MessageBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBarView.swift; sourceTree = "<group>"; };
+		DDDAB0451E287A2000775B87 /* MessageCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +154,12 @@
 		11ACFCFB1DEA29FE00E5FE62 /* Antidote */ = {
 			isa = PBXGroup;
 			children = (
-				11ACFCFC1DEA29FE00E5FE62 /* AppDelegate.swift */,
-				11ACFCFE1DEA29FE00E5FE62 /* Assets.xcassets */,
-				11ACFD001DEA29FE00E5FE62 /* MainMenu.xib */,
-				11ACFD031DEA29FE00E5FE62 /* Info.plist */,
-				11ACFD261DEA2CD800E5FE62 /* Antidote-Bridging-Header.h */,
+				DDDAB03C1E28789500775B87 /* AppDelegate.swift */,
+				DD43D5731E05B9B60036AC28 /* Controllers */,
+				DD43D5751E05B9C50036AC28 /* Extensions */,
+				DD43D5721E05B9A10036AC28 /* Models */,
+				DD43D5761E05B9CF0036AC28 /* Supporting Files */,
+				DD43D5741E05B9BE0036AC28 /* Views */,
 			);
 			path = Antidote;
 			sourceTree = "<group>";
@@ -168,6 +197,67 @@
 				CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD43D5721E05B9A10036AC28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DD43D5731E05B9B60036AC28 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDDAB03E1E287A0100775B87 /* ChatViewController.swift */,
+				DDDAB03A1E28749400775B87 /* ContactListViewController.swift */,
+				DDDAB03F1E287A0100775B87 /* MainWindowController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DD43D5741E05B9BE0036AC28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDDAB01D1E2870E400775B87 /* Base Views */,
+				DDDAB0421E287A2000775B87 /* ChatView.swift */,
+				DDDAB0351E28746500775B87 /* ContactCellView.swift */,
+				DDDAB0431E287A2000775B87 /* HeaderBarView.swift */,
+				DDDAB0441E287A2000775B87 /* MessageBarView.swift */,
+				DDDAB0451E287A2000775B87 /* MessageCellView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DD43D5751E05B9C50036AC28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DDA9A10E1E05DD17003E9888 /* StringExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		DD43D5761E05B9CF0036AC28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11ACFCFE1DEA29FE00E5FE62 /* Assets.xcassets */,
+				11ACFD001DEA29FE00E5FE62 /* MainMenu.xib */,
+				11ACFD031DEA29FE00E5FE62 /* Info.plist */,
+				11ACFD261DEA2CD800E5FE62 /* Antidote-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDDAB01D1E2870E400775B87 /* Base Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDDAB0291E2872F600775B87 /* BaseConstants.swift */,
+				DDDAB02A1E2872F600775B87 /* LabelView.swift */,
+				DDDAB02B1E2872F600775B87 /* ListView.swift */,
+				DDDAB02C1E2872F600775B87 /* MultilineTextField.swift */,
+				DDDAB02D1E2872F600775B87 /* RoundedImageView.swift */,
+			);
+			name = "Base Views";
 			sourceTree = "<group>";
 		};
 		F5FCC069498C736E609255AF /* Pods */ = {
@@ -234,7 +324,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Dmytro Vorobiov";
 				TargetAttributes = {
 					11ACFCF81DEA29FE00E5FE62 = {
@@ -410,7 +500,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11ACFCFD1DEA29FE00E5FE62 /* AppDelegate.swift in Sources */,
+				DDDAB0321E2872F600775B87 /* RoundedImageView.swift in Sources */,
+				DDDAB03B1E28749400775B87 /* ContactListViewController.swift in Sources */,
+				DDDAB0371E28746500775B87 /* ContactCellView.swift in Sources */,
+				DDDAB0301E2872F600775B87 /* ListView.swift in Sources */,
+				DDDAB0461E287A2000775B87 /* ChatView.swift in Sources */,
+				DDDAB0311E2872F600775B87 /* MultilineTextField.swift in Sources */,
+				DDDAB02E1E2872F600775B87 /* BaseConstants.swift in Sources */,
+				DDA9A10F1E05DD17003E9888 /* StringExtension.swift in Sources */,
+				DDDAB0491E287A2000775B87 /* MessageCellView.swift in Sources */,
+				DDDAB0481E287A2000775B87 /* MessageBarView.swift in Sources */,
+				DDDAB03D1E28789500775B87 /* AppDelegate.swift in Sources */,
+				DDDAB0471E287A2000775B87 /* HeaderBarView.swift in Sources */,
+				DDDAB0411E287A0100775B87 /* MainWindowController.swift in Sources */,
+				DDDAB0401E287A0100775B87 /* ChatViewController.swift in Sources */,
+				DDDAB02F1E2872F600775B87 /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +571,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -516,6 +621,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
