@@ -14,29 +14,35 @@ import Cocoa
     It's responsible for handling tableView's events and for communication with parent splitViewController.
  */
 
+protocol ConstactListViewControllerDelegate {
+    func contactSelected(contact: OCTFriend)
+}
+
 class ContactListViewController: NSViewController {
-    let listView = ListView()
+    let contactView = ContactListView()
+    let friends = FriendManager.getFriends()
+    var delegate: ConstactListViewControllerDelegate?
     
     override func loadView() {
-        listView.tableView.delegate = self
-        listView.tableView.dataSource = self
+        contactView.tableView.delegate = self
+        contactView.tableView.dataSource = self
         
-        listView.scrollView.verticalScroller?.alphaValue = 0
-        view = listView
+        contactView.scrollView.verticalScroller?.alphaValue = 0
+        view = contactView
     }
 }
 
 extension ContactListViewController: NSTableViewDelegate {
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        // TODO: fill with real data
         let cell = ContactCellView()
         
         // Example:
-        cell.usernameLabel.stringValue = "Будда Шакьямуни"
+        // TODO: fill with real data
+        cell.usernameLabel.stringValue = friends[row].nickname
         cell.userAvatar.image = NSImage(named: "placeholder")
-        cell.lastMessageTextLabel.stringValue = "Твоя карма плоха, нам нужно ее подправить"
-        cell.lastMessageDateLabel.stringValue = "543 BC"
-        cell.lastSeenLabel.stringValue = row % 2 == 0 ? "last seen 543 BC" : "online"
+        cell.lastMessageTextLabel.stringValue = "Last message"
+        cell.lastMessageDateLabel.stringValue = "Date"
+        cell.lastSeenLabel.stringValue = "last seen"
         cell.lastSenderAvatar.image = NSImage(named: "placeholder")
         
         return cell
@@ -45,11 +51,18 @@ extension ContactListViewController: NSTableViewDelegate {
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         return CGFloat(ContactCellView.Constants.cellHeight)
     }
+    
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        if let tableView = notification.object as? NSTableView {
+            let friend = friends[tableView.selectedRow]
+            delegate?.contactSelected(contact: friend)
+        }
+    }
 }
 
 extension ContactListViewController: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
         // TODO: fill with real data
-        return 10
+        return friends.count
     }
 }

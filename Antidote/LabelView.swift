@@ -26,5 +26,6 @@ class LabelView: NSTextField {
         self.isSelectable = false
         self.lineBreakMode = .byTruncatingTail
         self.font = NSFont.systemFont(ofSize: fontSize)
+        self.maximumNumberOfLines = 0
     }
 }

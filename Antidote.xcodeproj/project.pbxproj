@@ -14,6 +14,8 @@
 		11ACFD221DEA2C2300E5FE62 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACFD1E1DEA2C0D00E5FE62 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2188C6F48AA20211ED084596 /* libPods-AntidoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */; };
 		6EF574D6A951585A62040651 /* libPods-Antidote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A1CA5DBD2316D37B671FC0 /* libPods-Antidote.a */; };
+		DD75C1DA1E2C0F7100BDB7B7 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75C1D91E2C0F7100BDB7B7 /* ContactListView.swift */; };
+		DD75C1DF1E3490D900BDB7B7 /* FriendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75C1DE1E3490D900BDB7B7 /* FriendManager.swift */; };
 		DDA9A10F1E05DD17003E9888 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9A10E1E05DD17003E9888 /* StringExtension.swift */; };
 		DDDAB02E1E2872F600775B87 /* BaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB0291E2872F600775B87 /* BaseConstants.swift */; };
 		DDDAB02F1E2872F600775B87 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAB02A1E2872F600775B87 /* LabelView.swift */; };
@@ -92,6 +94,8 @@
 		97F2B7B37B023CCBED066487 /* Pods-AntidoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntidoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntidoteTests/Pods-AntidoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC55605FF3B6978D5B37057C /* Pods-Antidote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antidote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Antidote/Pods-Antidote.release.xcconfig"; sourceTree = "<group>"; };
 		CBE85D89DBA1458C366526D1 /* libPods-AntidoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AntidoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD75C1D91E2C0F7100BDB7B7 /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		DD75C1DE1E3490D900BDB7B7 /* FriendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendManager.swift; sourceTree = "<group>"; };
 		DDA9A10E1E05DD17003E9888 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		DDDAB0291E2872F600775B87 /* BaseConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConstants.swift; sourceTree = "<group>"; };
 		DDDAB02A1E2872F600775B87 /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 		DD43D5721E05B9A10036AC28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DD75C1DE1E3490D900BDB7B7 /* FriendManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			children = (
 				DDDAB01D1E2870E400775B87 /* Base Views */,
 				DDDAB0421E287A2000775B87 /* ChatView.swift */,
+				DD75C1D91E2C0F7100BDB7B7 /* ContactListView.swift */,
 				DDDAB0351E28746500775B87 /* ContactCellView.swift */,
 				DDDAB0431E287A2000775B87 /* HeaderBarView.swift */,
 				DDDAB0441E287A2000775B87 /* MessageBarView.swift */,
@@ -501,8 +507,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDAB0321E2872F600775B87 /* RoundedImageView.swift in Sources */,
+				DD75C1DF1E3490D900BDB7B7 /* FriendManager.swift in Sources */,
 				DDDAB03B1E28749400775B87 /* ContactListViewController.swift in Sources */,
 				DDDAB0371E28746500775B87 /* ContactCellView.swift in Sources */,
+				DD75C1DA1E2C0F7100BDB7B7 /* ContactListView.swift in Sources */,
 				DDDAB0301E2872F600775B87 /* ListView.swift in Sources */,
 				DDDAB0461E287A2000775B87 /* ChatView.swift in Sources */,
 				DDDAB0311E2872F600775B87 /* MultilineTextField.swift in Sources */,

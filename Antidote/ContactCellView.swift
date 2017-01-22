@@ -29,10 +29,17 @@ class ContactCellView: NSTableCellView {
     
     struct Constants {
         static let cellHeight = CGFloat(68)
+        static let borderWidth = CGFloat(2)
+        static let avatarSize = CGFloat(48)
         static let avatarCornerRadius = CGFloat(24)
-        
         static let lastSenderAvatarSize = CGFloat(32)
         static let lastSenderAvatarCornerRadius = CGFloat(16)
+    }
+    
+    override var backgroundStyle: NSBackgroundStyle {
+        didSet {
+            backgroundStyle == .light ? setColorsForLightStyle() : setColorsForDarkStyle()
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -50,76 +57,94 @@ class ContactCellView: NSTableCellView {
 // MARK: subviews handling
 
 fileprivate extension ContactCellView {
+    func setColorsForLightStyle() {
+        usernameLabel.textColor = NSColor.black
+        lastSenderAvatar.layer?.borderColor = NSColor.green.cgColor
+        lastMessageTextLabel.textColor = BaseConstants.lightGrayColor
+        lastMessageDateLabel.textColor = BaseConstants.lightGrayColor
+        lastSeenLabel.textColor = BaseConstants.lightGrayColor
+        divider.layer?.backgroundColor = BaseConstants.lightGrayColor.cgColor
+    }
+    
+    func setColorsForDarkStyle() {
+        usernameLabel.textColor = NSColor.white
+        lastSenderAvatar.layer?.borderColor = NSColor.green.cgColor
+        lastMessageTextLabel.textColor = NSColor.white
+        lastMessageDateLabel.textColor = NSColor.white
+        lastSeenLabel.textColor = NSColor.white
+        divider.layer?.backgroundColor = layer?.backgroundColor
+    }
+    
     func createSubviews() {
         userAvatar = RoundedImageView(withImageRadius: Constants.avatarCornerRadius)
         addSubview(userAvatar)
         
         lastSenderAvatar = RoundedImageView(withImageRadius: Constants.lastSenderAvatarCornerRadius)
-        lastSenderAvatar.layer?.borderWidth = 1
-        lastSenderAvatar.layer?.borderColor = NSColor.green.cgColor
+        lastSenderAvatar.layer?.borderWidth = Constants.borderWidth
         addSubview(lastSenderAvatar)
         
         usernameLabel = LabelView(withFontSize: BaseConstants.primaryFontSize)
         addSubview(usernameLabel)
         
         lastMessageTextLabel = LabelView()
-        lastMessageTextLabel.textColor = BaseConstants.lightGrayColor
         addSubview(lastMessageTextLabel)
         
         lastMessageDateLabel = LabelView()
-        lastMessageDateLabel.textColor = BaseConstants.lightGrayColor
         lastMessageDateLabel.alignment = .right
         addSubview(lastMessageDateLabel)
         
         lastSeenLabel = LabelView()
-        lastSeenLabel.textColor = BaseConstants.lightGrayColor
         addSubview(lastSeenLabel)
         
         divider = NSView()
         divider.wantsLayer = true
-        divider.layer?.backgroundColor = BaseConstants.lightGrayColor.cgColor
         addSubview(divider)
+        
+        setColorsForLightStyle()
     }
     
     func setupConstraints() {
         userAvatar.snp.makeConstraints {
             $0.centerY.equalTo(self)
             $0.left.equalTo(BaseConstants.offset)
-        }
-        
-        usernameLabel.snp.makeConstraints {
-            $0.top.equalTo(self).offset(BaseConstants.offset)
-            $0.left.equalTo(divider)
-            $0.right.equalTo(lastMessageDateLabel.snp.left).offset(BaseConstants.offset)
-        }
-        
-        lastSeenLabel.snp.makeConstraints {
-            $0.top.equalTo(usernameLabel.snp.bottom)
-            $0.left.equalTo(divider)
-        }
-        
-        lastMessageTextLabel.snp.makeConstraints {
-            $0.top.equalTo(lastSeenLabel.snp.bottom)
-            $0.left.equalTo(divider)
-            $0.width.equalTo(usernameLabel)
-        }
-        
-        lastMessageDateLabel.snp.makeConstraints {
-            $0.top.equalTo(usernameLabel)
-            $0.right.equalTo(self).offset(-BaseConstants.offset)
-        }
-        
-        lastSenderAvatar.snp.makeConstraints {
-            $0.right.equalTo(lastMessageDateLabel)
-            $0.top.equalTo(lastMessageDateLabel.snp.bottom)
-            
-            $0.height.width.equalTo(Constants.lastSenderAvatarSize)
+            $0.height.width.equalTo(Constants.avatarSize)
         }
         
         divider.snp.makeConstraints {
             $0.left.equalTo(userAvatar.snp.right).offset(BaseConstants.offset)
             $0.height.equalTo(BaseConstants.dividerLineHeight)
             $0.right.bottom.equalTo(self)
+        }
+        
+        lastMessageDateLabel.snp.makeConstraints {
+            $0.top.equalTo(self).offset(BaseConstants.offset)
+            $0.right.equalTo(self).offset(-BaseConstants.offset)
+            $0.width.equalTo(BaseConstants.dateLabelWidth)
+        }
+        
+        lastSenderAvatar.snp.makeConstraints {
+            $0.right.equalTo(lastMessageDateLabel)
+            $0.top.equalTo(lastMessageDateLabel.snp.bottom)
+            $0.height.width.equalTo(Constants.lastSenderAvatarSize)
+        }
+        
+        usernameLabel.snp.makeConstraints {
+            $0.top.equalTo(lastMessageDateLabel)
+            $0.left.equalTo(divider)
+            $0.right.equalTo(lastMessageDateLabel.snp.left)
+        }
+        
+        lastSeenLabel.snp.makeConstraints {
+            $0.top.equalTo(usernameLabel.snp.bottom)
+            $0.left.equalTo(divider)
+            $0.bottom.equalTo(lastMessageTextLabel.snp.top)
+            $0.width.equalTo(usernameLabel)
+        }
+        
+        lastMessageTextLabel.snp.makeConstraints {
+            $0.top.equalTo(lastSeenLabel.snp.bottom)
+            $0.left.equalTo(divider)
+            $0.right.equalTo(lastSenderAvatar.snp.left)
         }
     }
 }

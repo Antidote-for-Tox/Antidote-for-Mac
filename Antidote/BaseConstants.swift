@@ -10,12 +10,13 @@ struct BaseConstants {
     static let offset = 10
     static let edgeOffset = 20
     
-    static let lightGrayColor = NSColor(white: 0.3, alpha: 0.5)
-    
-    static let dividerLineHeight = CGFloat(0.6)
+    static let dividerLineHeight = CGFloat(1)
     
     static let primaryFontSize = CGFloat(14)
     static let secondaryFontSize = CGFloat(12)
     
     static let iconButtonSize = CGFloat(30)
+    static let dateLabelWidth = CGFloat(70)
+    
+    static let lightGrayColor = NSColor(white: 0.3, alpha: 0.5)
 }

@@ -20,7 +20,6 @@ class MessageCellView : NSTableCellView {
     struct Constants {
         static let senderAvatarCornerRadius = CGFloat(18)
         static let senderAvatarSize = CGFloat(36)
-        static let sentDateLabelWidth = 70
     }
     
     required init?(coder: NSCoder) {
@@ -29,9 +28,6 @@ class MessageCellView : NSTableCellView {
     
     override init(frame: NSRect) {
         super.init(frame: frame)
-        
-        autoresizingMask = .viewHeightSizable
-        translatesAutoresizingMaskIntoConstraints = true
         
         createSubviews()
         setupConstraints()
@@ -77,7 +73,7 @@ fileprivate extension MessageCellView {
         sentDateLabel.snp.makeConstraints {
             $0.top.equalTo(senderAvatar)
             $0.right.equalTo(self).offset(-BaseConstants.edgeOffset)
-            $0.width.equalTo(Constants.sentDateLabelWidth)
+            $0.width.equalTo(BaseConstants.dateLabelWidth)
         }
         
         messageContent.snp.makeConstraints {

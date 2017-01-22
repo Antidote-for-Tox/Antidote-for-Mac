@@ -66,12 +66,22 @@ extension MainWindowController: NSWindowDelegate {
 fileprivate extension MainWindowController {
     func createSubviews() {
         let contactListViewController = ContactListViewController()
+        contactListViewController.delegate = self
         let contactListViewItem = NSSplitViewItem(contentListWithViewController: contactListViewController)
         contactListViewItem.minimumThickness = Constants.minimumColumnThickness
         contactListViewItem.maximumThickness = Constants.maximumColumnThickness
         splitViewController.addSplitViewItem(contactListViewItem)
+    }
+}
+
+extension MainWindowController: ConstactListViewControllerDelegate {
+    func contactSelected(contact: OCTFriend) {
+        print("Contact selected with: \(contact.nickname)")
+        if splitViewController.splitViewItems.count > 1 {
+            splitViewController.removeChildViewController(at: 1)
+        }
         
-        let chatViewController = ChatViewController()
+        let chatViewController = ChatViewController(withFriendObject: contact)
         let chatViewItem = NSSplitViewItem(viewController: chatViewController)
         chatViewItem.minimumThickness = 350
         splitViewController.addSplitViewItem(chatViewItem)

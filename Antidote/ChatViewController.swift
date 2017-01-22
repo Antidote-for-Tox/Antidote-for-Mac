@@ -10,7 +10,18 @@ import Cocoa
 
 class ChatViewController: NSViewController {
     let chatView = ChatView()
-    var heightCaches = [Int: CGFloat]()
+    var friend: OCTFriend
+    
+    init(withFriendObject friend: OCTFriend) {
+        self.friend = friend
+        
+        super.init(nibName: nil, bundle: nil)!
+    }
+    
+    required init?(coder: NSCoder) {
+        self.friend = OCTFriend()
+        super.init(coder: coder)
+    }
     
     override func loadView() {
         chatView.tableView.delegate = self
@@ -22,9 +33,15 @@ class ChatViewController: NSViewController {
         chatView.tableView.scrollRowToVisible(chatView.tableView.numberOfRows-1)
         
         if let headerBar = chatView.headerBar as? HeaderBarView {
-            headerBar.usernameLabel.stringValue = "Будда Шакьямуни"
-            headerBar.lastSeenLabel.stringValue = "last seen 543 BC"
+            // TODO: fill with real data
+            headerBar.usernameLabel.stringValue = friend.nickname
+            headerBar.lastSeenLabel.stringValue = "Date"
         }
+    }
+    
+    override func viewDidLayout() {
+        print("viewDidLayout")
+        chatView.tableView.reloadData()
     }
 }
 
@@ -35,9 +52,9 @@ extension ChatViewController: NSTableViewDelegate {
         // TODO: fill with real data
         // Example:
         cell.senderAvatar.image = NSImage(named: "placeholder")
-        cell.senderLabel.stringValue = "Будда Шакьямуни"
-        cell.sentDateLabel.stringValue = "3:45 PM"
-        cell.messageContent.stringValue = "Ваша карма повышена на \(row)"
+        cell.senderLabel.stringValue = "Username"
+        cell.sentDateLabel.stringValue = "Date"
+        cell.messageContent.stringValue = "Message Message Message Message Message Message Message Message"
         
         return cell
     }
