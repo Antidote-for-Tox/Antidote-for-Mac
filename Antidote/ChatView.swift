@@ -12,8 +12,8 @@ import SnapKit
 // MARK: init methods and properties
 
 class ChatView: ListView {
-    var headerBar: NSView!
-    var bottomBar: NSView!
+    var headerBar: HeaderBarView!
+    var bottomBar: MessageBarView!
     
     struct Constants {
         static let barHeight = 50
@@ -45,12 +45,10 @@ fileprivate extension ChatView {
         headerBar.snp.makeConstraints {
             $0.top.left.right.equalTo(self)
             $0.height.equalTo(Constants.barHeight)
-            $0.bottom.equalTo(scrollView.snp.top)
         }
         
         bottomBar.snp.makeConstraints {
             $0.left.right.bottom.equalTo(self)
-            $0.top.equalTo(scrollView.snp.bottom)
             $0.height.equalTo(Constants.barHeight)
         }
         

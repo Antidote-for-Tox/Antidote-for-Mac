@@ -23,11 +23,6 @@ class ContactListView: ListView {
 }
 
 fileprivate extension ContactListView {
-    func createSubviews() {
-        
-    }
-    
-    func setupConstraints() {
-        
-    }
+    func createSubviews() {}
+    func setupConstraints() {}
 }

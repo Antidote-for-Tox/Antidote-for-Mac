@@ -76,7 +76,6 @@ fileprivate extension MainWindowController {
 
 extension MainWindowController: ConstactListViewControllerDelegate {
     func contactSelected(contact: OCTFriend) {
-        print("Contact selected with: \(contact.nickname)")
         if splitViewController.splitViewItems.count > 1 {
             splitViewController.removeChildViewController(at: 1)
         }

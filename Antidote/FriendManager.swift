@@ -15,7 +15,8 @@ class FriendManager {
         
         for i in 0..<users {
             let friend = OCTFriend()
-            friend.nickname = "User \(i)"
+            friend.nickname = "User \(i)" // like a little hitlar
+            friend.statusMessage = "User's \(i) status"
             friends.append(friend)
         }
         

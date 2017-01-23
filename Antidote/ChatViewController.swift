@@ -32,16 +32,9 @@ class ChatViewController: NSViewController {
     override func viewDidLoad() {
         chatView.tableView.scrollRowToVisible(chatView.tableView.numberOfRows-1)
         
-        if let headerBar = chatView.headerBar as? HeaderBarView {
-            // TODO: fill with real data
-            headerBar.usernameLabel.stringValue = friend.nickname
-            headerBar.lastSeenLabel.stringValue = "Date"
-        }
-    }
-    
-    override func viewDidLayout() {
-        print("viewDidLayout")
-        chatView.tableView.reloadData()
+        // TODO: fill with real data
+        chatView.headerBar.usernameLabel.stringValue = friend.nickname
+        chatView.headerBar.lastSeenLabel.stringValue = "Date"
     }
 }
 
