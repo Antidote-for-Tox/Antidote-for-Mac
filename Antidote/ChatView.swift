@@ -15,8 +15,8 @@ class ChatView: ListView {
     var headerBar: HeaderBarView!
     var bottomBar: MessageBarView!
     
-    struct Constants {
-        static let barHeight = 50
+    fileprivate struct Constants {
+        static let barHeight: CGFloat = 50.0
     }
     
     required init?(coder: NSCoder) {

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Mark Onyschuk. All rights reserved.
 //
 
-// Stolen from https://github.com/monyschuk/AutosizingTextFieldSample
+// Taken from https://github.com/monyschuk/AutosizingTextFieldSample
 // And converted to Swift 3 by clicking on red circle.
 
 import Cocoa

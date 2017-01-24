@@ -22,7 +22,7 @@ class MessageBarView: NSView {
         super.init(frame: NSZeroRect)
         
         wantsLayer = true
-        layer?.backgroundColor = NSColor.white.cgColor
+        layer?.backgroundColor = BaseConstants.Colors.barBackgroundColor.cgColor
         
         createSubviews()
         setupConstraints()
@@ -32,7 +32,7 @@ class MessageBarView: NSView {
 fileprivate extension MessageBarView {
     func createSubviews() {
         textField = MultilineTextField()
-        textField.placeholderString = "Write message..."
+        textField.placeholderString = String(localized: "Write message...")
         textField.isBezeled = false
         textField.focusRingType = .none
         textField.font = NSFont.systemFont(ofSize: BaseConstants.primaryFontSize)
@@ -46,7 +46,7 @@ fileprivate extension MessageBarView {
         
         divider = NSView()
         divider.wantsLayer = true
-        divider.layer?.backgroundColor = BaseConstants.lightGrayColor.cgColor
+        divider.layer?.backgroundColor = BaseConstants.Colors.contourColor.cgColor
         addSubview(divider)
     }
     

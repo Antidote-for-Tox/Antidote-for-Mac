@@ -12,7 +12,7 @@ class ChatViewController: NSViewController {
     let chatView = ChatView()
     var friend: OCTFriend
     
-    init(withFriendObject friend: OCTFriend) {
+    init(friendObject friend: OCTFriend) {
         self.friend = friend
         
         super.init(nibName: nil, bundle: nil)!

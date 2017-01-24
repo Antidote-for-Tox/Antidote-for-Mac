@@ -49,7 +49,7 @@ extension ContactListViewController: NSTableViewDelegate {
     }
     
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-        return CGFloat(ContactCellView.Constants.cellHeight)
+        return 68
     }
     
     func tableViewSelectionDidChange(_ notification: Notification) {

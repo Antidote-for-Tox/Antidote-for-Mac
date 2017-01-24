@@ -29,7 +29,7 @@ class HeaderBarView: NSView {
         super.init(frame: NSZeroRect)
         
         wantsLayer = true
-        layer?.backgroundColor = NSColor.white.cgColor
+        layer?.backgroundColor = BaseConstants.Colors.barBackgroundColor.cgColor
         
         createSubviews()
         setupConstraints()
@@ -40,11 +40,11 @@ class HeaderBarView: NSView {
 
 fileprivate extension HeaderBarView {
     func createSubviews() {
-        usernameLabel = LabelView(withFontSize: BaseConstants.primaryFontSize)
+        usernameLabel = LabelView(fontSize: BaseConstants.primaryFontSize)
         addSubview(usernameLabel)
         
         lastSeenLabel = LabelView()
-        lastSeenLabel.textColor = BaseConstants.lightGrayColor
+        lastSeenLabel.textColor = BaseConstants.Colors.secondaryFontColor
         addSubview(lastSeenLabel)
         
         backButton = NSButton()
@@ -64,7 +64,7 @@ fileprivate extension HeaderBarView {
         
         divider = NSView()
         divider.wantsLayer = true
-        divider.layer?.backgroundColor = BaseConstants.lightGrayColor.cgColor
+        divider.layer?.backgroundColor = BaseConstants.Colors.contourColor.cgColor
         addSubview(divider)
     }
     

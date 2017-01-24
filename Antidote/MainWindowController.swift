@@ -19,9 +19,9 @@ import Cocoa
 // MARK: init methods and properties
 
 class MainWindowController: NSWindowController {
-    struct Constants {
-        static let minimumColumnThickness = CGFloat(300)
-        static let maximumColumnThickness = CGFloat(650)
+    fileprivate struct Constants {
+        static let minColumnThickness: CGFloat = 300.0
+        static let maxColumnThickness: CGFloat = 650.0
     }
     
     fileprivate let splitViewController = NSSplitViewController()
@@ -68,8 +68,8 @@ fileprivate extension MainWindowController {
         let contactListViewController = ContactListViewController()
         contactListViewController.delegate = self
         let contactListViewItem = NSSplitViewItem(contentListWithViewController: contactListViewController)
-        contactListViewItem.minimumThickness = Constants.minimumColumnThickness
-        contactListViewItem.maximumThickness = Constants.maximumColumnThickness
+        contactListViewItem.minimumThickness = Constants.minColumnThickness
+        contactListViewItem.maximumThickness = Constants.maxColumnThickness
         splitViewController.addSplitViewItem(contactListViewItem)
     }
 }
@@ -80,7 +80,7 @@ extension MainWindowController: ConstactListViewControllerDelegate {
             splitViewController.removeChildViewController(at: 1)
         }
         
-        let chatViewController = ChatViewController(withFriendObject: contact)
+        let chatViewController = ChatViewController(friendObject: contact)
         let chatViewItem = NSSplitViewItem(viewController: chatViewController)
         chatViewItem.minimumThickness = 350
         splitViewController.addSplitViewItem(chatViewItem)

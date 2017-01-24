@@ -17,9 +17,9 @@ class MessageCellView : NSTableCellView {
     var messageContent: LabelView!
     var sentDateLabel: LabelView!
     
-    struct Constants {
-        static let senderAvatarCornerRadius = CGFloat(18)
-        static let senderAvatarSize = CGFloat(36)
+    fileprivate struct Constants {
+        static let senderAvatarCornerRadius: CGFloat = 18.0
+        static let senderAvatarSize: CGFloat = 36.0
     }
     
     required init?(coder: NSCoder) {
@@ -38,20 +38,20 @@ class MessageCellView : NSTableCellView {
 
 fileprivate extension MessageCellView {
     func createSubviews() {
-        senderAvatar = RoundedImageView(withImageRadius: Constants.senderAvatarCornerRadius)
+        senderAvatar = RoundedImageView(imageRadius: Constants.senderAvatarCornerRadius)
         addSubview(senderAvatar)
         
         senderLabel = LabelView()
-        senderLabel.textColor = NSColor.purple // we can randomize sender color just for fun
+        senderLabel.textColor = BaseConstants.Colors.senderNameColor // we can randomize sender color just for fun
         senderLabel.font = NSFont.boldSystemFont(ofSize: BaseConstants.secondaryFontSize)
         addSubview(senderLabel)
         
-        messageContent = LabelView(withFontSize: BaseConstants.primaryFontSize)
+        messageContent = LabelView(fontSize: BaseConstants.primaryFontSize)
         messageContent.lineBreakMode = .byWordWrapping
         addSubview(messageContent)
         
         sentDateLabel = LabelView()
-        sentDateLabel.textColor = NSColor(white: 0.3, alpha: 0.5)
+        sentDateLabel.textColor = BaseConstants.Colors.secondaryFontColor
         sentDateLabel.alignment = .right
         addSubview(sentDateLabel)
     }

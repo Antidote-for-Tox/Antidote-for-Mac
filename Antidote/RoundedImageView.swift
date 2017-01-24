@@ -13,7 +13,7 @@ class RoundedImageView: NSImageView {
         super.init(coder: coder)
     }
     
-    init(withImageRadius imageRadius: CGFloat) {
+    init(imageRadius: CGFloat) {
         super.init(frame: NSZeroRect)
         
         self.wantsLayer = true

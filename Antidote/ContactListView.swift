@@ -19,7 +19,6 @@ class ContactListView: ListView {
         createSubviews()
         setupConstraints()
     }
-    
 }
 
 fileprivate extension ContactListView {

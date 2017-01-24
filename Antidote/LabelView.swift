@@ -17,7 +17,7 @@ class LabelView: NSTextField {
         super.init(coder: coder)
     }
     
-    init(withFontSize fontSize: CGFloat = CGFloat(12)) {
+    init(fontSize: CGFloat = 12.0) {
         super.init(frame: NSZeroRect)
         
         self.isBezeled = false

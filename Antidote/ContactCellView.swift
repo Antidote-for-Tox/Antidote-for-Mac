@@ -27,13 +27,13 @@ class ContactCellView: NSTableCellView {
     
     fileprivate var divider: NSView!
     
-    struct Constants {
-        static let cellHeight = CGFloat(68)
-        static let borderWidth = CGFloat(2)
-        static let avatarSize = CGFloat(48)
-        static let avatarCornerRadius = CGFloat(24)
-        static let lastSenderAvatarSize = CGFloat(32)
-        static let lastSenderAvatarCornerRadius = CGFloat(16)
+    fileprivate struct Constants {
+        static let cellHeight: CGFloat = 68.0
+        static let borderWidth: CGFloat = 2.0
+        static let avatarSize: CGFloat = 48.0
+        static let avatarCornerRadius: CGFloat = 24.0
+        static let lastSenderAvatarSize: CGFloat = 32.0
+        static let lastSenderAvatarCornerRadius: CGFloat = 16.0
     }
     
     override var backgroundStyle: NSBackgroundStyle {
@@ -58,32 +58,32 @@ class ContactCellView: NSTableCellView {
 
 fileprivate extension ContactCellView {
     func setColorsForLightStyle() {
-        usernameLabel.textColor = NSColor.black
-        lastSenderAvatar.layer?.borderColor = NSColor.green.cgColor
-        lastMessageTextLabel.textColor = BaseConstants.lightGrayColor
-        lastMessageDateLabel.textColor = BaseConstants.lightGrayColor
-        lastSeenLabel.textColor = BaseConstants.lightGrayColor
-        divider.layer?.backgroundColor = BaseConstants.lightGrayColor.cgColor
+        usernameLabel.textColor = BaseConstants.Colors.primaryFontColor
+        lastSenderAvatar.layer?.borderColor = BaseConstants.Colors.messageDeliveredBorderColor.cgColor
+        lastMessageTextLabel.textColor = BaseConstants.Colors.secondaryFontColor
+        lastMessageDateLabel.textColor = BaseConstants.Colors.secondaryFontColor
+        lastSeenLabel.textColor = BaseConstants.Colors.secondaryFontColor
+        divider.layer?.backgroundColor = BaseConstants.Colors.secondaryFontColor.cgColor
     }
     
     func setColorsForDarkStyle() {
-        usernameLabel.textColor = NSColor.white
-        lastSenderAvatar.layer?.borderColor = NSColor.green.cgColor
-        lastMessageTextLabel.textColor = NSColor.white
-        lastMessageDateLabel.textColor = NSColor.white
-        lastSeenLabel.textColor = NSColor.white
+        usernameLabel.textColor = BaseConstants.Colors.altPrimaryFontColor
+        lastSenderAvatar.layer?.borderColor = BaseConstants.Colors.messageDeliveredBorderColor.cgColor
+        lastMessageTextLabel.textColor = BaseConstants.Colors.altSecondaryFontColor
+        lastMessageDateLabel.textColor = BaseConstants.Colors.altSecondaryFontColor
+        lastSeenLabel.textColor = BaseConstants.Colors.altSecondaryFontColor
         divider.layer?.backgroundColor = layer?.backgroundColor
     }
     
     func createSubviews() {
-        userAvatar = RoundedImageView(withImageRadius: Constants.avatarCornerRadius)
+        userAvatar = RoundedImageView(imageRadius: Constants.avatarCornerRadius)
         addSubview(userAvatar)
         
-        lastSenderAvatar = RoundedImageView(withImageRadius: Constants.lastSenderAvatarCornerRadius)
+        lastSenderAvatar = RoundedImageView(imageRadius: Constants.lastSenderAvatarCornerRadius)
         lastSenderAvatar.layer?.borderWidth = Constants.borderWidth
         addSubview(lastSenderAvatar)
         
-        usernameLabel = LabelView(withFontSize: BaseConstants.primaryFontSize)
+        usernameLabel = LabelView(fontSize: BaseConstants.primaryFontSize)
         addSubview(usernameLabel)
         
         lastMessageTextLabel = LabelView()
@@ -107,7 +107,7 @@ fileprivate extension ContactCellView {
         userAvatar.snp.makeConstraints {
             $0.centerY.equalTo(self)
             $0.left.equalTo(BaseConstants.offset)
-            $0.height.width.equalTo(Constants.avatarSize)
+            $0.size.equalTo(Constants.avatarSize)
         }
         
         divider.snp.makeConstraints {
@@ -125,7 +125,7 @@ fileprivate extension ContactCellView {
         lastSenderAvatar.snp.makeConstraints {
             $0.right.equalTo(lastMessageDateLabel)
             $0.top.equalTo(lastMessageDateLabel.snp.bottom)
-            $0.height.width.equalTo(Constants.lastSenderAvatarSize)
+            $0.size.equalTo(Constants.lastSenderAvatarSize)
         }
         
         usernameLabel.snp.makeConstraints {
@@ -137,7 +137,6 @@ fileprivate extension ContactCellView {
         lastSeenLabel.snp.makeConstraints {
             $0.top.equalTo(usernameLabel.snp.bottom)
             $0.left.equalTo(divider)
-            $0.bottom.equalTo(lastMessageTextLabel.snp.top)
             $0.width.equalTo(usernameLabel)
         }
         
