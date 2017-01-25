@@ -1,0 +1,9 @@
+/* 
+  localized.strings
+  Antidote
+
+  Created by Yoba on 24/01/2017.
+  Copyright © 2017 Dmytro Vorobiov. All rights reserved.
+*/
+
+"message-bar.message-placeholder" = "Write message...";
